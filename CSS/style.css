@@ -18,6 +18,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Утилитарные классы */
+
 h1,
 h2,
 h3,
@@ -41,6 +43,8 @@ h2 {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  /* Хедер */
   
 }
 .logo {
@@ -249,10 +253,19 @@ li > .advantages {
   margin-right: 0;
 }
 /* Футер */
+
+address{
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+padding-bottom: 60px;
+}
+
 footer {
   background-color: #2f303a;
   color: var(--primary-white-color);
-  height: 252px;
+
   padding-top: 60px;
 }
 .logo-second-part-footer {
@@ -272,6 +285,12 @@ footer {
 }
 .logo-footer{
   margin-bottom: 20px;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -294,6 +313,7 @@ footer {
   padding-right: 22px;
   display: inline-block;
   margin-right: 8px;
+  border-style: none;
 }
 
 .portfolio-buttons-list{
@@ -353,6 +373,8 @@ justify-content: center;
  margin-bottom: 30px;
 }
 
-/* .products :nth-child(3n+3){
-  margin-right: 0;
-} */
+.card-description{
+  border-right: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+border-bottom:1px solid #EEEEEE;
+}
