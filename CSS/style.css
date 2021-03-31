@@ -44,6 +44,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-right: 0;
 }
 
 .grid {
@@ -77,6 +78,7 @@ body {
   display: flex;
   min-height: 80px;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .site-nav {
   display: flex;
@@ -147,13 +149,15 @@ body {
 .tel,
 .mail {
   color: var(--primary-text-color);
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 .header-contact-icon {
-  fill: var(--primary-text-color);
+  fill: currentColor;
+  margin-right: 10px;
 }
-.header-contact-icon:hover {
+.header-contact-icon:hover,
+.header-contact-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -199,7 +203,15 @@ body {
 .advantages-item {
   --grid-item: 4;
 }
-
+.advantages-thumb {
+  width: 270px;
+  height: 170px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 /* Чем мы занимаемся */
 
 .team-title-head {
@@ -259,7 +271,8 @@ body {
 .cliens-item-link:hover .icon {
   fill: var(--accent-color);
 }
-.cliens-item-link:hover {
+.cliens-item-link:hover,
+.cliens-item-link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -287,7 +300,8 @@ body {
   margin-right: 10px;
 }
 
-.social-icons-link:hover {
+.social-icons-link:hover,
+.social-icons-link:focus {
   background-color: var(--accent-color);
 }
 .social-icons-link:hover .icon {
@@ -299,17 +313,25 @@ body {
   background-color: #f5f4fa;
   color: var(--title-text-color);
   cursor: pointer;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
 }
+
 .portfolio-button:focus,
 .portfolio-button:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .portfolio-title {
   display: none;
@@ -328,10 +350,28 @@ body {
   letter-spacing: 0.03em;
 }
 
+.portfolio-buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.portfolio-cards-item {
+  --grid-item: 3;
+}
+
 h1,
 h2,
 h3 {
   color: black;
+}
+
+.card-description {
+  display: block;
+  padding: 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 }
 
 /* Наша команда */
@@ -345,6 +385,10 @@ h3 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+.teammate-name {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 /* Футер */
@@ -367,8 +411,61 @@ footer {
 .tel-footer:focus {
   color: var(--accent-color);
 }
+address {
+  font-style: normal;
+}
+.footer-content {
+  display: flex;
+}
+.footer-address {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.footer-socials {
+  margin-top: 72px;
+  margin-left: 70px;
+}
+.footer-appeal {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.icon-footer {
+  fill: var(--primary-white-color);
+}
 
-.teammate-name {
-  font-size: 16px;
-  line-height: 1.2;
+.social-icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.social-icons-item .icon-footer {
+  width: 20px;
+  height: 20px;
+}
+.social-icons-link-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link-footer:hover,
+.social-icons-link-footer:focus {
+  background-color: var(--accent-color);
+}
+.social-icons-link:hover .icon {
+  fill: var(--primary-white-color);
 }
