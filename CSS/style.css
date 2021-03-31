@@ -32,8 +32,8 @@ p {
 
 .list {
   list-style: none;
-  padding-left: 0;
   margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -44,7 +44,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-right: 0;
 }
 
 .grid {
@@ -365,6 +364,10 @@ h2,
 h3 {
   color: black;
 }
+.portfolio-cards-list {
+  margin: 0;
+  padding: 0;
+}
 
 .card-description {
   display: block;
@@ -372,6 +375,10 @@ h3 {
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
+}
+.portfolio-cards-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /* Наша команда */
