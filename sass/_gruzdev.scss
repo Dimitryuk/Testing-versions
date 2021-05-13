@@ -1,0 +1,16 @@
+.menu {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+  &.is-open {
+    @media screen and (max-width: 1279px) {
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 648px;
+      padding-left: auto;
+      padding-right: auto;
+      background-color: rgba(254, 243, 228, 0.9);
+    }

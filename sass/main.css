@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+}
+
+.footer-form__input {
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  display: block;
+}
+
+.footer-form__field {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.footer-form__field:nth-child(2) {
+  margin-bottom: 37px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials__link {
+  padding: 5px;
+}
+
+.socials__link:focus, .socials__link:hover {
+  fill: brown;
+}
+/*# sourceMappingURL=main.css.map */

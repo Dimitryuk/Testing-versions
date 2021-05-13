@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+}
+
+.socials {
+  display: flex;
+}
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

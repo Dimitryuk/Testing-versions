@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+}
+
+.socials__link {
+  padding: 5px;
+  &:focus,
+  &:hover {
+    fill: brown;
+  }
+}
